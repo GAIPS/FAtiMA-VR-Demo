@@ -1,0 +1,1064 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "PJScenario",
+			"Description": "This is an example scenario for the use case of Policia Judiciária\r\n\r\nWe are questioning a suspect. His name is António Pedro, he is married and has 4 kids.\r\nHe works in construction, There was a domestic violence complaint.",
+			"WorldModelSource": "PJWorldModel.wmo",
+			"CharacterSources": ["Sheppard.rpc", "Player.rpc"],
+			"Dialogues": [
+				{
+					"CurrentState": "S3",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "I've no time for that, why am I here?",
+					"UtteranceId": "TTS-92EA47B0A23DC6B9BF560AB2FE7E4013"
+				}, 
+				{
+					"CurrentState": "HomeSpecific",
+					"NextState": "Q34",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "What exactly happened yesterday Mr António?",
+					"UtteranceId": "TTS-E8326B061FCA324183A6ADDFE4B63130"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "F14",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Does she work? What's her job?",
+					"UtteranceId": "TTS-B5AD1F68B005E4B2ACD6DEFCCA026345"
+				}, 
+				{
+					"CurrentState": "WifeWorkSpecific",
+					"NextState": "F16",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Have you ever been to your wife's workplace?",
+					"UtteranceId": "TTS-C7A97E8C19BE1C4C9093E9096AB6EFAB"
+				}, 
+				{
+					"CurrentState": "F2",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Don't you have anything else to do other than asking about that bitch.",
+					"UtteranceId": "TTS-530210F57EDFEDE4A6E99FCC07C58C6A"
+				}, 
+				{
+					"CurrentState": "Fail6",
+					"NextState": "WifePoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Fuck you, you can't treat me like this!",
+					"UtteranceId": "TTS-29C9CAB06BDD6FF5CEC0062AFAB9AF6C"
+				}, 
+				{
+					"CurrentState": "SexualRelationsSpecfic",
+					"NextState": "Q17",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Did you have sexual intercourse yesterday?",
+					"UtteranceId": "TTS-11486264CC139364E6B8CE776A645F37"
+				}, 
+				{
+					"CurrentState": "WorkSpecific",
+					"NextState": "S8",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "How long have you been working in construction?",
+					"UtteranceId": "TTS-3F2E5F17D1CDA6433B0627BC4E92690B"
+				}, 
+				{
+					"CurrentState": "S7",
+					"NextState": "WorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "No, it isn't. It's rather bad now, you know, the construction is not good now...",
+					"UtteranceId": "TTS-01039A6C9C74F3C8ACA6B18DCABB2C7D"
+				}, 
+				{
+					"CurrentState": "KidsSpecific",
+					"NextState": "S15",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "A pair of imps? What are their names? How old are they, do you know?",
+					"UtteranceId": "TTS-1905FAEEE8F18C37099EBF7F92DB29A9"
+				}, 
+				{
+					"CurrentState": "KidsSpecific",
+					"NextState": "S14",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Four kids?",
+					"UtteranceId": "TTS-3BBA28355D3640EE5D56FC2C483313AD"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "S13",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Have you got kids?",
+					"UtteranceId": "TTS-304A7D128E511A8FDB85F180D44B5E98"
+				}, 
+				{
+					"CurrentState": "WorkSpecific",
+					"NextState": "S7",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Is it enough to make a living?",
+					"UtteranceId": "TTS-217079476806430AE17934D432DFFAEE"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "S12",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Are you single? Married?",
+					"UtteranceId": "TTS-58F8DBA5AFCDBA0DCFED02EFE0746C65"
+				}, 
+				{
+					"CurrentState": "WifeWorkLocationSpecific",
+					"NextState": "Fail3",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "It's necessary to control those places. One cannot trust women...",
+					"UtteranceId": "TTS-EEC52178667AEF513FD753E209BDEE81"
+				}, 
+				{
+					"CurrentState": "StopSpecific",
+					"NextState": "Q78",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "You didn't stop when she asked you to stop?",
+					"UtteranceId": "TTS-21CA31D89D837125721DD4008293D5D2"
+				}, 
+				{
+					"CurrentState": "WifeFuckingSpecific",
+					"NextState": "Q79",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "You've told us that your wife likes fucking. And you how do you like it?",
+					"UtteranceId": "TTS-EFDC7B694E4F6A0C0BEB9FD660389297"
+				}, 
+				{
+					"CurrentState": "PoliceHomeSpecific",
+					"NextState": "Q8",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Can you tell us something about yesterday? What happened?",
+					"UtteranceId": "TTS-FBDC1257C2A07D0816FEB6AA22C70B1E"
+				}, 
+				{
+					"CurrentState": "WifeFuckingSpecific",
+					"NextState": "Q78",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "We're here to help.",
+					"UtteranceId": "TTS-E5848CFAC08A83E9C02F6C14BD281166"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "S5",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "So Mr. António Pedro you work in construction, isn't it?",
+					"UtteranceId": "TTS-3A13877AE4D6D4CC19D20B9471AB41FE"
+				}, 
+				{
+					"CurrentState": "F14",
+					"NextState": "WifeWorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "Would it be just me to get the money? I think she is a hairdresser",
+					"UtteranceId": "TTS-8921CD4E1B53EC7191436E9A36674A5C"
+				}, 
+				{
+					"CurrentState": "KidsSpecific",
+					"NextState": "S16",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Do you have a good relationship with them?",
+					"UtteranceId": "TTS-58907331A850DA70763B24C2021EC190"
+				}, 
+				{
+					"CurrentState": "Questioning",
+					"NextState": "Q7",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Have you heard that the Police was at your home yesterday?",
+					"UtteranceId": "TTS-72B6D3743E7913C856EC5D2F2151670E"
+				}, 
+				{
+					"CurrentState": "ExcitedSpecific",
+					"NextState": "Q60",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "Yesterday during your practices did she ever ask you to stop?",
+					"UtteranceId": "TTS-70D618E1EEA729F6D198BDD9BE636A42"
+				}, 
+				{
+					"CurrentState": "StopSpecific",
+					"NextState": "Q64",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "In your point of view, is this normal?",
+					"UtteranceId": "TTS-B63CF79771B890F8CBFE8FD9F5D527E9"
+				}, 
+				{
+					"CurrentState": "Q78",
+					"NextState": "WifeFuckingSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "We agree with what we do. I do nothing she doesn't want. Has she told you she was forced? The chick is crazy! You don't know.",
+					"UtteranceId": "TTS-0108788B4BBD0B28A74B69C3B8DE4C4D"
+				}, 
+				{
+					"CurrentState": "NoMeansYesSpecific",
+					"NextState": "Q62",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Didn't she tell you to stop?",
+					"UtteranceId": "TTS-BE105277C6137B75B353E4523A95A689"
+				}, 
+				{
+					"CurrentState": "NoMeansYesSpecific",
+					"NextState": "Q61",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "What happened?",
+					"UtteranceId": "TTS-9CBB8AB9BF567189876DC3F84F766DFD"
+				}, 
+				{
+					"CurrentState": "ExcitedSpecific",
+					"NextState": "Q59",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Feel at ease with us…what happened yesterday?",
+					"UtteranceId": "TTS-B6AEFE416E048623364114F53545EF07"
+				}, 
+				{
+					"CurrentState": "UnderstandSpecific",
+					"NextState": "Q32",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "Did your wife complain yesterday specifically?",
+					"UtteranceId": "TTS-F55F13A672C39F453FF4C300F81DF01C"
+				}, 
+				{
+					"CurrentState": "HomeSpecific",
+					"NextState": "Q33",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Does it have anything to do with the Police going to your home yesterday?",
+					"UtteranceId": "TTS-91C7B747FABD7D8CF8BD473D41EBF598"
+				}, 
+				{
+					"CurrentState": "Q15",
+					"NextState": "SexualRelationsSpecfic",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "I respect you very much, but I don't want to talk about my sexual life. All I can say is, a man that is a man wants to fuck everyday. I'm not a slack guy.",
+					"UtteranceId": "TTS-BB73D2BA745A059A813151F6BEDA8A86"
+				}, 
+				{
+					"CurrentState": "Q34",
+					"NextState": "RememberSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "I don't remember...",
+					"UtteranceId": "TTS-2673DC36C58DFDD290BD05985FC1250A"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "Fail4",
+					"Meaning": "-",
+					"Style": "Aggression(7)",
+					"Utterance": "I was told that you're a violent guy and beat her every week",
+					"UtteranceId": "TTS-F1A289C1DEA1C2FE19D074A4B2AAA538"
+				}, 
+				{
+					"CurrentState": "SexualRelationsSpecfic",
+					"NextState": "Q18",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Did something strange happened during the sexual act?",
+					"UtteranceId": "TTS-EEA1D72B4C6E03839ECB3D7A74B8CA79"
+				}, 
+				{
+					"CurrentState": "UnderstandSpecific",
+					"NextState": "Q30",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Has your wife ever complained about your sexual practices?",
+					"UtteranceId": "TTS-76DCFA82D09C5BBA18B71EE1F909A503"
+				}, 
+				{
+					"CurrentState": "ApproachSpecific",
+					"NextState": "Q21",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "How do you approach a girl normally?",
+					"UtteranceId": "TTS-6D5CE6E55381F267C2E9FC9318454BAD"
+				}, 
+				{
+					"CurrentState": "Questioning",
+					"NextState": "Q15",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Mr António, did you have sexual relations yesterday?",
+					"UtteranceId": "TTS-78C947B5A25D5EA3E1C43E25B8D7F36B"
+				}, 
+				{
+					"CurrentState": "Q17",
+					"NextState": "SexualRelationsSpecfic",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "The kids weren't at home and we had to take advantage...",
+					"UtteranceId": "TTS-D7BBD1DCE13F5394764399CEF5294B87"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "F4",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "How long have you been together?",
+					"UtteranceId": "TTS-03FE01B22E4DD71C72F391B2BABD013F"
+				}, 
+				{
+					"CurrentState": "WifeFuckingSpecific",
+					"NextState": "Q80",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "If your wife agreed with everything you did. Why did we find her locked in your bedroom?",
+					"UtteranceId": "TTS-B22B5EF1A0511631AEFC613100121BDD"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "F7",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "How old is your wife?",
+					"UtteranceId": "TTS-A5565D6E68FAFA6B7534EA4CA4643573"
+				}, 
+				{
+					"CurrentState": "PoliceHomeSpecific",
+					"NextState": "Q12",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Did the Police contact you?",
+					"UtteranceId": "TTS-65C998BC34673715D883776F93326867"
+				}, 
+				{
+					"CurrentState": "Fail5",
+					"NextState": "RememberSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(8)",
+					"Utterance": "Fuck you! You are the police, you can't treat me like this! I want my lawyer immediately!",
+					"UtteranceId": "TTS-C03F50E16BE592805D99BF0E8D4B92CF"
+				}, 
+				{
+					"CurrentState": "WorkSpecific",
+					"NextState": "S10",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "So what exatcly do you do in construction?",
+					"UtteranceId": "TTS-F6E21965F67B61D5C26F580F2773560E"
+				}, 
+				{
+					"CurrentState": "Fail2",
+					"NextState": "WorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "What are you trying to call me? I want my lawyer!",
+					"UtteranceId": "TTS-197F946327CE30B074575D76050FC60F"
+				}, 
+				{
+					"CurrentState": "Fail4",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": " You are pathethic, you know nothing about me, I want my lawyer!",
+					"UtteranceId": "TTS-0328D91D4AAA8FB643B75172ECA8F4EF"
+				}, 
+				{
+					"CurrentState": "Q48",
+					"NextState": "ExcitedSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Are you talking about that?",
+					"UtteranceId": "TTS-938BB603CA754EB90C8E9218856A98A5"
+				}, 
+				{
+					"CurrentState": "Closure",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "We are at the end, I just need you to sign a report of what you have told us.",
+					"UtteranceId": "TTS-A4A82BB622AC7CDD12AC88B2399FD880"
+				}, 
+				{
+					"CurrentState": "Closure",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Thank you for your cooperation, we are done here.",
+					"UtteranceId": "TTS-57416400794A6711E576B5F9D840DAED"
+				}, 
+				{
+					"CurrentState": "CowSpecific",
+					"NextState": "F9",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Don't you want to talk about it?",
+					"UtteranceId": "TTS-30626576DAE55E608ACA4854AD45CE92"
+				}, 
+				{
+					"CurrentState": "CowSpecific",
+					"NextState": "F8",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Cow? Why cow?",
+					"UtteranceId": "TTS-FF67D76B53C87C104A2CCAF7CF5BC4C8"
+				}, 
+				{
+					"CurrentState": "F17",
+					"NextState": "WifeRelationShipSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "I don't care about it…",
+					"UtteranceId": "TTS-1562A7DD5BB9C374B2BEF201875A43F0"
+				}, 
+				{
+					"CurrentState": "ApproachSpecific",
+					"NextState": "Q28",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "What happens when your partner refuses your advances?",
+					"UtteranceId": "TTS-5B38B8DC5D4C0E3664922B0F646BDA96"
+				}, 
+				{
+					"CurrentState": "F9",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "No, I still don't know why I'm here.",
+					"UtteranceId": "TTS-087503BE6B1A40502AAC767206EC8DDA"
+				}, 
+				{
+					"CurrentState": "Closure",
+					"NextState": "Failure",
+					"Meaning": "-",
+					"Style": "Aggression(9)",
+					"Utterance": "Don't worry. You will rot for the rest of your life behind bars",
+					"UtteranceId": "TTS-46A795C4ADA5CFA0998E54F3DEAA893F"
+				}, 
+				{
+					"CurrentState": "End",
+					"NextState": "Disconnect",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I see, I'll wait a bit then, but please give me a beer....",
+					"UtteranceId": "TTS-AA339CD2ADEA9959329CF57E34E3E398"
+				}, 
+				{
+					"CurrentState": "F2",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "There are good days and bad days. It's like that, you know…Married for so long, it's just like that…",
+					"UtteranceId": "TTS-575A61E385E690A68D65EE83051F825D"
+				}, 
+				{
+					"CurrentState": "WifeRelationShipSpecific",
+					"NextState": "F17",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "It seems your relationship has had better days...",
+					"UtteranceId": "TTS-8A08BC74C82EE5655390A1FBF0B4AD41"
+				}, 
+				{
+					"CurrentState": "S5",
+					"NextState": "WorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Yes...me... I'm an expert on cement...",
+					"UtteranceId": "TTS-4F1F1B0F82384AEDAA467BE11EC21DEA"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "F8",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Are you fed up with your marriage?",
+					"UtteranceId": "TTS-15600F1429B2350E678143D82CE923AA"
+				}, 
+				{
+					"CurrentState": "F16",
+					"NextState": "WifeWorkLocationSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "What for?  I don't know what she does…",
+					"UtteranceId": "TTS-1165AD3CB69459F2F8F376CF02A5D6B1"
+				}, 
+				{
+					"CurrentState": "F19",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "She doesn't mistreat them, but she could pay more attention to them.",
+					"UtteranceId": "TTS-C2290542FC744C3B37D609EECEC71337"
+				}, 
+				{
+					"CurrentState": "F18",
+					"NextState": "Questioning",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "It's like everything else. Aren't you married too? A guy lives good moments and bad moments. A guy has to manage…",
+					"UtteranceId": "TTS-94BA7A30ADD807C84908D05688DEF098"
+				}, 
+				{
+					"CurrentState": "F2",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": " That's a private matter. I don't speak about it with Policemen",
+					"UtteranceId": "TTS-56D2B02808C773E5463437B9CA0E11DF"
+				}, 
+				{
+					"CurrentState": "F2",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "That's nothing to do with you.",
+					"UtteranceId": "TTS-F49686B22C424CBAD5AA9AF19944AD8D"
+				}, 
+				{
+					"CurrentState": "F2",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "We get along together very well. We live in a kind of honeymoon. Haven't you noticed?",
+					"UtteranceId": "TTS-9538367A3377E7E415CC65259DA21CEB"
+				}, 
+				{
+					"CurrentState": "WifeWorkLocationSpecific",
+					"NextState": "F17",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "You are not sure if your wife works or not?",
+					"UtteranceId": "TTS-69AD018D6F23ABB1C19906C79793C3B6"
+				}, 
+				{
+					"CurrentState": "S3",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "I will only speak with you in the presence of my lawyer",
+					"UtteranceId": "TTS-77DDA0A3C8D9BF3A801D5CB3DA7BD75E"
+				}, 
+				{
+					"CurrentState": "F4",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Aha…aha…I don'know. Too many years…",
+					"UtteranceId": "TTS-94A6CFEF5F3AC9908A6F8311895BEBAC"
+				}, 
+				{
+					"CurrentState": "F7",
+					"NextState": "CowSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "I think that cow's about forty years old.",
+					"UtteranceId": "TTS-AD3B483479120C5A456396E019171D31"
+				}, 
+				{
+					"CurrentState": "F8",
+					"NextState": "WifeRelationshipSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "There are scenes that are ours…A guy doesn't come here and starts talking about…",
+					"UtteranceId": "TTS-C85182FE10AA59A661D280C72AFCA977"
+				}, 
+				{
+					"CurrentState": "Failure",
+					"NextState": "Disconnect",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Fuck you, I won't answer anymore questions, I want my lawyer!",
+					"UtteranceId": "TTS-BBD3F5F5DF7550E250F7F4A3073EE8B2"
+				}, 
+				{
+					"CurrentState": "SexualRelationsSpecfic",
+					"NextState": "Q16",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "When does that usually happen?",
+					"UtteranceId": "TTS-905F95540D0A6E99C6F638EE72064CE8"
+				}, 
+				{
+					"CurrentState": "Q16",
+					"NextState": "SexualRelationsSpecfic",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "When you're at home, your wife's at home, the kids aren't at home, we fuck, it's normal.",
+					"UtteranceId": "TTS-D170C7E62390D88AEA81B4127B3DFB1C"
+				}, 
+				{
+					"CurrentState": "Q18",
+					"NextState": "ApproachSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "No. Let's see. Why are we talking about my sexual life? That's private. You're men, you know how it is. I don't need to explain how we do it.",
+					"UtteranceId": "TTS-8EF88E10C80C1F9820241C1EAD168E6C"
+				}, 
+				{
+					"CurrentState": "Q32",
+					"NextState": "HomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "I don't think so. She likes it violent. Complaining, doesn't seem like she would do that?",
+					"UtteranceId": "TTS-13D402DE9E105274A8497DABC2BE7CD0"
+				}, 
+				{
+					"CurrentState": "Q20",
+					"NextState": "ApproachSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(1)",
+					"Utterance": "How I wish that could be…",
+					"UtteranceId": "TTS-5DA435175D48F5EC95A6BC52BB18DAAA"
+				}, 
+				{
+					"CurrentState": "Q21",
+					"NextState": "ApproachSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "If a guy wants, he knows what to do. All men do the same way.",
+					"UtteranceId": "TTS-DF72BC2540D431305B2463DC87FEC57F"
+				}, 
+				{
+					"CurrentState": "Introduction",
+					"NextState": "S3",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Good evening I'm an inspector from Policia Judiciaria and you're here for an interview",
+					"UtteranceId": "TTS-85C2A2961097CE2B4C17C38B309F8250"
+				}, 
+				{
+					"CurrentState": "Q30",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "She enjoys violent sex, not me. She always asks me to beat her.",
+					"UtteranceId": "TTS-4CBDDF5E229A58D91FF4ECB04DDC7F41"
+				}, 
+				{
+					"CurrentState": "Q30",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "Why? Does your wife complain?",
+					"UtteranceId": "TTS-F252105A2DF318A8F3AE1DF82EFF4983"
+				}, 
+				{
+					"CurrentState": "Q30",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "No, she never complains. She loves it.",
+					"UtteranceId": "TTS-CC76984E363C56B4A19256B88871C7AC"
+				}, 
+				{
+					"CurrentState": "WifeSpecific",
+					"NextState": "F2",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "How's the relationship between you two?",
+					"UtteranceId": "TTS-EAF35CE54D84F9243A70441073EE015A"
+				}, 
+				{
+					"CurrentState": "Q30",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "Do you know a woman that doesn't complain?",
+					"UtteranceId": "TTS-0EFC7A9CC2E6BA675036913CA80BEC9E"
+				}, 
+				{
+					"CurrentState": "ExcitedSpecific",
+					"NextState": "Q58",
+					"Meaning": "-",
+					"Style": "Aggression(8)",
+					"Utterance": "Apart from beating her, what else did you do?",
+					"UtteranceId": "TTS-A05BE49DBC481C0BF2AC18560A83B3D8"
+				}, 
+				{
+					"CurrentState": "RememberSpecific",
+					"NextState": "Q48",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "Wasn't your wife lying on the bed at home? Wasn't she tied? Didn't you use something to tie her?",
+					"UtteranceId": "TTS-52A1F30D59CDC60CC50D06CCE08206CA"
+				}, 
+				{
+					"CurrentState": "Q80",
+					"NextState": "Closure",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "That 's not to be taken seriously. It's a joke between us.",
+					"UtteranceId": "TTS-778C42C5819A63CD728D58E3FA787B6C"
+				}, 
+				{
+					"CurrentState": "WorkSpecific",
+					"NextState": "Fail2",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "It seems you prefer to stay at home, resting and drinking some beers, isn't it?",
+					"UtteranceId": "TTS-CDF16E0D5D58D752C59F0F6993480FB7"
+				}, 
+				{
+					"CurrentState": "Q58",
+					"NextState": "ExcitedSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Nothing. Some things...",
+					"UtteranceId": "TTS-9CE47D7A28F81EAE5C56038021A6F9A8"
+				}, 
+				{
+					"CurrentState": "Q59",
+					"NextState": "ExcitedSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "She'd seem like a bitch, which in fact she's, but we're not judging her now.",
+					"UtteranceId": "TTS-9AD68260CA1214887E82ABD9D7544935"
+				}, 
+				{
+					"CurrentState": "Q60",
+					"NextState": "NoMeansYesSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "Don't get me wrong. But when women say no, sometimes they want to say yes.",
+					"UtteranceId": "TTS-557352E1AD1507C2623AB8683AD95366"
+				}, 
+				{
+					"CurrentState": "Q61",
+					"NextState": "NoMeansYesSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(4)",
+					"Utterance": "You know how it is. A guy gets excited, the bitch tells you to stop, a guy can't help going on. How can a man stop? And then you see on her face that she's happy and enjoying.",
+					"UtteranceId": "TTS-78E99FBE298726A056BF8852BEF887F4"
+				}, 
+				{
+					"CurrentState": "Q62",
+					"NextState": "StopSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Maybe she did. But one looks at her face and sees she's enjoying. I'd not imagine you call me here for this.",
+					"UtteranceId": "TTS-76C553227F56D1C0DB3504718825BB1B"
+				}, 
+				{
+					"CurrentState": "Q64",
+					"NextState": "StopSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Of course, it is.",
+					"UtteranceId": "TTS-11AE35EEE1497196105CBCE8EA5FB00B"
+				}, 
+				{
+					"CurrentState": "Q7",
+					"NextState": "PoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(1)",
+					"Utterance": "It seems so.",
+					"UtteranceId": "TTS-62B37F3797CA737B42D79AA8EBB71208"
+				}, 
+				{
+					"CurrentState": "Q79",
+					"NextState": "WifeFuckingSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "I have to give her what she likes otherwise she gets another guy. With women I Iike eveything. Not with kids. Those are pedopphiles. Those are the ones that you should chase not me.",
+					"UtteranceId": "TTS-EE212F8D17F5D357B78016180E767E8F"
+				}, 
+				{
+					"CurrentState": "Q11",
+					"NextState": "PoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "I suspected it so...",
+					"UtteranceId": "TTS-86AFAE9FC2857AFFE3E2FC67E8DB5805"
+				}, 
+				{
+					"CurrentState": "Q12",
+					"NextState": "PoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "Maybe they tried, but I had something to work out.",
+					"UtteranceId": "TTS-30F5D0FC9E8F144DC39F36C305B82CA6"
+				}, 
+				{
+					"CurrentState": "S3",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(1)",
+					"Utterance": "It depends. The Police's never satisfied",
+					"UtteranceId": "TTS-F87BDA9754A6F71DD4BFEC8C0B6B07B0"
+				}, 
+				{
+					"CurrentState": "S12",
+					"NextState": "WifeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Married, better not to be…",
+					"UtteranceId": "TTS-21D52428DF8897FE4CC811673F1544A8"
+				}, 
+				{
+					"CurrentState": "S13",
+					"NextState": "KidsSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Four.",
+					"UtteranceId": "TTS-C5A9AE524BF33B11D8DDF3C1943C726A"
+				}, 
+				{
+					"CurrentState": "S14",
+					"NextState": "KidsSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "A man has to be a man, isn't it so?",
+					"UtteranceId": "TTS-CD91728DA373ED89F3A2D10BD6DB9AB4"
+				}, 
+				{
+					"CurrentState": "S15",
+					"NextState": "KidsSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Of course. They 're mine. One's Rubinho, the other's Cristiano, the light of my eyes, they 're twins. There's also Cátia Vanessa and Bruna Ilda…, the little ones.",
+					"UtteranceId": "TTS-7F9804C7E0B8145814A00F7B98019331"
+				}, 
+				{
+					"CurrentState": "S16",
+					"NextState": "KidsSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Of course, the chidren are the light of our eyes…",
+					"UtteranceId": "TTS-E1BBC21204F387D6D520A2E68912F97F"
+				}, 
+				{
+					"CurrentState": "KidsSpecific",
+					"NextState": "F19",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "How is you wife's relationship with the kids? Does she treat  them well?",
+					"UtteranceId": "TTS-236099BA34A8CFAEBE12504248AD50EE"
+				}, 
+				{
+					"CurrentState": "S3",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(1)",
+					"Utterance": "Of course, as far as I'm aware.",
+					"UtteranceId": "TTS-3B5A721632A43CACD205DFD4CB615E10"
+				}, 
+				{
+					"CurrentState": "S3",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Ok, in what I can…",
+					"UtteranceId": "TTS-B85CC3285A889F37B75535DAFDAD409D"
+				}, 
+				{
+					"CurrentState": "S8",
+					"NextState": "WorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Since I was young, about 20 years I think...",
+					"UtteranceId": "TTS-7456E8238194122AC238C52512ACA884"
+				}, 
+				{
+					"CurrentState": "Q8",
+					"NextState": "PoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "That's what I'd like to know, is that why I am here?",
+					"UtteranceId": "TTS-5EC6E7F966EE4CE6B260A14F6E7747EA"
+				}, 
+				{
+					"CurrentState": "Fail1",
+					"NextState": "WorkSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Is it relaxing? Are you dumb? Do you even read the news, I thought cops weren't supposed to be this ignorant",
+					"UtteranceId": "TTS-14913A809150766A19F19D350B9D2DBE"
+				}, 
+				{
+					"CurrentState": "Fail3",
+					"NextState": "WifeWorkLocationSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Stop trying to get into my head! I want my lawyer!",
+					"UtteranceId": "TTS-6BBD178C154E7F7DBCB9798C326F77B8"
+				}, 
+				{
+					"CurrentState": "CowSpecific",
+					"NextState": "Fail11",
+					"Meaning": "-",
+					"Style": "Aggression(3)",
+					"Utterance": "I know what you mean. Women enjoy some slaps on the bottom…",
+					"UtteranceId": "TTS-77FFF0195762F323F636EB03D88B7FA8"
+				}, 
+				{
+					"CurrentState": "PoliceHomeSpecific",
+					"NextState": "Fail8",
+					"Meaning": "-",
+					"Style": "Aggression(8)",
+					"Utterance": "You're lying to us. I am running out of patience, tell us the truth",
+					"UtteranceId": "TTS-BB52A44C434D3C3FC7796369CF1A8C98"
+				}, 
+				{
+					"CurrentState": "RememberSpecific",
+					"NextState": "Fail5",
+					"Meaning": "-",
+					"Style": "Aggression(7)",
+					"Utterance": "We know you're an animal and tie her with electric wires. That you burn her with cigarette butts. You're a prick.",
+					"UtteranceId": "TTS-F6A78B91F9C49F268FB60CB089E324BB"
+				}, 
+				{
+					"CurrentState": "Fail7",
+					"NextState": "WifeSexualRefusalSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "I know my rights! I will give you nothing! I want my lawyer",
+					"UtteranceId": "TTS-1D6D96B7DD067C7CB7C1383B6D80EA50"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Fail9",
+					"Meaning": "-",
+					"Style": "Aggression(7)",
+					"Utterance": "I've seen that you're nervous. Tell me what you've done!",
+					"UtteranceId": "TTS-9609D4CD732E72E0F55D237D12A0D79B"
+				}, 
+				{
+					"CurrentState": "Fail10",
+					"NextState": "WifeSexualRefusalSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "I don't know what you are talking about ya prick",
+					"UtteranceId": "TTS-EEC4375B2F8D14ECCADF0E99F6E8A843"
+				}, 
+				{
+					"CurrentState": "Fail9",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "I don't know what you are talking about, I would like my lawyer because you clearly have nothing on me",
+					"UtteranceId": "TTS-947BC3BEFF5D0A0FECA608327D09101A"
+				}, 
+				{
+					"CurrentState": "Q28",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(7)",
+					"Utterance": "Well, she is my wife isn't she?  She must do what I want. I don't understand these questions…",
+					"UtteranceId": "TTS-60B1634D8E3409EDF450BBA2BF86DFFA"
+				}, 
+				{
+					"CurrentState": "Q33",
+					"NextState": "ExcitedSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "I don't think so. What does one thing have to do with the other? We were together, we fucked, I went out for a while. If then she called the Police, I don't know.",
+					"UtteranceId": "TTS-D716DC456034F3C5ED4C989F64E14755"
+				}, 
+				{
+					"CurrentState": "Q30",
+					"NextState": "UnderstandSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(6)",
+					"Utterance": "We like to watch pornos. Then we do as in the films, fucking hard. What's the problem?",
+					"UtteranceId": "TTS-5D29042E3E9DD0CF8139B4BF9004CC9A"
+				}, 
+				{
+					"CurrentState": "ApproachSpecific",
+					"NextState": "Q20",
+					"Meaning": "-",
+					"Style": "Aggression(0)",
+					"Utterance": "Imagine, Mr. António, if it were not your wife, but somebody else, how would you approach them?",
+					"UtteranceId": "TTS-CA9E473492D4ACE9EFAB53610DF2AA1D"
+				}, 
+				{
+					"CurrentState": "-",
+					"NextState": "-",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Could you please repeat that?",
+					"UtteranceId": "TTS-1CFE8BFB5FDD9EF4084CA475259C9D32"
+				}, 
+				{
+					"CurrentState": "PoliceHomeSpecific",
+					"NextState": "Q11",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "Did you know your wife called the police?",
+					"UtteranceId": "TTS-B46AD8E88810C8811FACAEDA50A5B024"
+				}, 
+				{
+					"CurrentState": "S10",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "Aggression(1)",
+					"Utterance": "I'm a painter. Interior woodwork painting is my job, doors, millwork, footers are my speciality.",
+					"UtteranceId": "TTS-16E37AD605611AD42BC67A083BF4AB88"
+				}, 
+				{
+					"CurrentState": "Fail8",
+					"NextState": "PoliceHomeSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "I could care less what you want , you dirty cops",
+					"UtteranceId": "TTS-C8AB774B8C2DAEA75BF1B9A48A10D2F8"
+				}, 
+				{
+					"CurrentState": "WifeRelationShipSpecific",
+					"NextState": "F18",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "Sounds like things are falling apart",
+					"UtteranceId": "TTS-DAB730C0A2024DEA3CA42CE3B41931E0"
+				}, 
+				{
+					"CurrentState": "Fail11",
+					"NextState": "CowSpecific",
+					"Meaning": "-",
+					"Style": "Aggression(5)",
+					"Utterance": "Hahaha you are an idiot, you are the police, you can't say that!",
+					"UtteranceId": "TTS-291E921B2994B1C27CEAA9AC411840A1"
+				}, 
+				{
+					"CurrentState": "WifeWorkLocationSpecific",
+					"NextState": "F17",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "Your relationship must be going well if you are not even sure where your wife works",
+					"UtteranceId": "TTS-670ABE37AF129A6DD254C5DA8372C97E"
+				}, 
+				{
+					"CurrentState": "Questioning",
+					"NextState": "Q17",
+					"Meaning": "-",
+					"Style": "Aggression(2)",
+					"Utterance": "What happened yesterday, between you and your wife?",
+					"UtteranceId": "TTS-62DC2F97FB589A803A42D3653B124573"
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

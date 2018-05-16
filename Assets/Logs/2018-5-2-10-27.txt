@@ -1,0 +1,3 @@
+ EA Source: /Scenarios/PJ/Suspect.ea 
+Are you single? Married? 
+How's the relationship between you two? 

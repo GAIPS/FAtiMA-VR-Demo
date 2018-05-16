@@ -1,0 +1,37 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"EffectsByEventNames":
+				{
+					"dictionary": [
+						{
+							"key": "Event(Action-End, [s], Speak(*, [ns], *, *), [t])",
+							"value": [
+								{
+									"PropertyName": "Has(Floor)",
+									"NewValue": "[t]",
+									"ResponsibleAgent": "[s]",
+									"ObserverAgent": "[s]"
+								}, 
+								{
+									"PropertyName": "DialogueState([t])",
+									"NewValue": "[ns]",
+									"ResponsibleAgent": "[s]",
+									"ObserverAgent": "[s]"
+								}, 
+								{
+									"PropertyName": "Has(Floor)",
+									"NewValue": "[t]",
+									"ResponsibleAgent": "[s]",
+									"ObserverAgent": "[t]"
+								}]
+						}]
+				}
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "WorldModel.WorldModelAsset, World_Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

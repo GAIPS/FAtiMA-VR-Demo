@@ -1,0 +1,61 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"KnowledgeBase":
+				{
+					"Perspective": "Suspect",
+					"Knowledge":
+						{
+							"SELF":
+								{
+									"DialogueState(Player)": "Start"
+								}
+						}
+				},
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": [
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] > 0", "[x] < 4"]
+								},
+							"Desirability": -2,
+							"Praiseworthiness": -5
+						}, 
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] >= 4", "[x] < 7"]
+								},
+							"Desirability": -3,
+							"Praiseworthiness": -6
+						}, 
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] >= 7"]
+								},
+							"Desirability": -3,
+							"Praiseworthiness": -10
+						}]
+				},
+			"EmotionDispositions": [
+				{
+					"Emotion": "*",
+					"Decay": 1,
+					"Threshold": 1
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
