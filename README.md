@@ -1,7 +1,7 @@
 # FAtiMA-VR-Demo
 
 
-This is the repository for a Virtual Reality scenario that uses FAtiMA based componenents.
+This is the repository for a Virtual Reality scenario that uses FAtiMA based components.
 
 The scenario depicted here is a Police Interrogation scene where the Player has to interrogate a Virtual Suspect.
 
