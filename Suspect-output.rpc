@@ -22,7 +22,7 @@
 			"CommeillFautAssetSource": null,
 			"EmotionalState":
 				{
-					"Mood": -0.8806659,
+					"Mood": -0.5946035,
 					"initialTick": 0,
 					"EmotionalPool": [],
 					"AppraisalConfiguration":
@@ -37,7 +37,7 @@
 				},
 			"AutobiographicMemory":
 				{
-					"Tick": 11,
+					"Tick": 45,
 					"records": [
 						{
 							"classId": 0,
@@ -53,7 +53,7 @@
 							"Id": 2,
 							"Type": "Property-Change",
 							"Subject": "Player",
-							"Timestamp": 10,
+							"Timestamp": 44,
 							"Property": "Has(Floor)",
 							"NewValue": "Suspect"
 						}]
